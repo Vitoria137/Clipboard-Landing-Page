@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+:root{
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    background: url(img/bg-header-desktop.png) no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+}
+
+header h1{
+    color: var(--dark-grayish-blue);
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+header p{
+    padding: 30px;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+header > img{
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.header-buttons{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header-buttons button{
+    width: 200px;
+    height: 2.5em;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: .2s opacity ease-in-out;
+}
+
+.header-buttons button:hover{
+    opacity: .8;
+}
+
+.btn-1{
+    background: var(--strong-cyan);
+    box-shadow: 0px 2.5px 0px hsl(171, 62%, 26%);
+}
+
+.btn-2{
+    background: var(--light-blue);
+    box-shadow: 0px 2.5px 0px hsl(233, 50%, 36%);
+}
+
+/* secao 1 */
+
+.secao-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.textos{
+    text-align: center;
+    width: 65%;
+    margin-top: 10%;
+    margin-bottom: 15px;
+}
+
+.textos h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--dark-grayish-blue);
+}
+
+.textos p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--grayish-blue);
+}
+
+.secao-1-corpo img{
+    width: 50%;
+}
+
+.secao-1-corpo{
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.subtextos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 45px;
+    width: 30%;
+}
+
+.subtextos h1{
+    font-size: 23px;
+    color: var(--dark-grayish-blue);
+}
+
+.subtextos p{
+    padding-top: 10px;
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+
+/* info */
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+.info-info{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    width: 25%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+.info-info img{
+    width: 50px;
+    margin: 0 auto;
+}
+
+.info-info h1{
+    font-size: 18px;
+    color: var(--dark-grayish-blue);
+}
+
+.info-info p{
+    font-size: 16px;
+    color: var(--grayish-blue);
+    margin-bottom: 25px;
+}
+
+.icones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    justify-content: center;
+    align-content: center;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+}
+
+footer ul{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+footer ul li{
+    color: var(--dark-grayish-blue);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer ul li:hover{
+    color: var(--strong-cyan);
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+}
+
+.icons i{
+    margin-top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: var(--strong-cyan);
+}
+
+@media (max-width: 800px){
+    .secao-1-corpo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .icones{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul{
+        padding-right: 10px;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+}
